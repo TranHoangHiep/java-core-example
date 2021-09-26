@@ -38,7 +38,7 @@ public class BinarySearch {
         if (positionResult == -1) {
             System.out.println("Element not present");
         } else {
-            System.out.println("Element found ad index: " + positionResult);
+            System.out.println("Element found at index: " + positionResult);
         }
     }
 }
