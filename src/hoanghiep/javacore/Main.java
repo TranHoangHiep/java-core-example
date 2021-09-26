@@ -64,7 +64,8 @@ public class Main {
 
         Collection<String> list = Collections.emptyList();
         for(String item : list){
-            System.out.println("item: " + list);
+            System.out.println("item: " + item);
         }
+        list.stream().peek(item -> System.out.println(item)).count();
     }
 }
