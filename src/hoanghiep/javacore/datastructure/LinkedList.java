@@ -27,13 +27,23 @@ public class LinkedList {
         second.next = third;
 
         list.printList();
+
+        list.insertAfter(second, 4);
+
+        list.printList();
     }
 
     public void printList() {
         Node n = head;
-        while(n != null){
+        while (n != null) {
             System.out.println(n.data + " ");
             n = n.next;
         }
+    }
+
+    public void insertAfter(Node prevNode, int newData) {
+        Node newNode = new Node(newData);
+        newNode.next = prevNode.next;
+        prevNode.next = newNode;
     }
 }
