@@ -8,7 +8,7 @@ public class LinkedList {
         Node next;
 
         Node(int data) {
-            data = data;
+            this.data = data;
             next = null;
         }
     }
@@ -25,5 +25,15 @@ public class LinkedList {
 
         list.head.next = second;
         second.next = third;
+
+        list.printList();
+    }
+
+    public void printList() {
+        Node n = head;
+        while(n != null){
+            System.out.println(n.data + " ");
+            n = n.next;
+        }
     }
 }
